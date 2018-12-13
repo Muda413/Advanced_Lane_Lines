@@ -1,6 +1,4 @@
-## Writeup Template
-
-### You can use this file as a template for your writeup if you want to submit it as a markdown file, but feel free to use some other method and submit a pdf if you prefer.
+## Project Writeup
 
 ---
 
@@ -24,7 +22,8 @@ The goals / steps of this project are the following:
 [image3]: ./output_images/undistort_test_img.png "Road Transformed"
 [image4]: ./output_images/combined_thresholded.png "Combined Thresholded Example"
 [image5]: ./output_images/perspective_transformed_image.png "Warp Example"
-[image6]: ./output_images/test1.jpg "Final Output"
+[image6]: ./output_images/lane_line_detect.png "Final Output"
+[image7]: ./output_images/test1.jpg "Final Output"
 [video1]: ./project_video.mp4 "Video"
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/571/view) Points
@@ -116,7 +115,7 @@ After applying calibration, thresholding, and perspective transformation to the 
 
 With the hot pixels tracked to the top of the frame, the `LaneLine()` class is first implemented to fit the lane lines. Subsequently, if the lane line is still within the center of the minpix  of 50 defined, the quadratic coefficient that fits the original line is used to fit new lane lines.  Below is a snapshop of detected lane lines from an image.
 
-![alt text][image5]
+![alt text][image6]
 
 #### 5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
 
@@ -134,7 +133,7 @@ Eventually, the `radius_of_curvature() and camera_distance()` functions were imp
 
 I implemented this step within the `Pipeline()` class. Here is an example of my output from a test image:
 
-![alt text][image6]
+![alt text][image7]
 
 ---
 
